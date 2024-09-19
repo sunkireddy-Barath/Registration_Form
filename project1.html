@@ -1,0 +1,93 @@
+<html>
+<body bgcolor=pink>
+<center>
+<h1>
+Student Registration Form
+</h1>
+</center>
+<hr size=5 color=red>
+<form name=f1  action="C:\barath.s\HTML files\st.html" method=get >
+<table border=10 cellpadding=30 align=center bordercolor=blue style="border-collapse:collapse;">
+<tr>
+<td> Enter Your Name: </td>
+<td> <input type=textarea name=n1 size=40> </td>
+</tr>
+<tr>
+<td> Enter Your Password: </td>
+<td> <input type=password name=p1 size=40> </td>
+</tr>
+<tr>
+<td> Select the Gender: </td>
+<td> 
+<input type=radio name=g1 value="Male"> Male
+<input type=radio name=g1 value="Female">Female
+</td>
+</tr>
+<tr>
+<td> Select the ID Proof: </td>
+<td>
+<input type=checkbox name=i1 value="Aadhaar Card"> Aadhaar Card
+<input type=checkbox name=i1 value="Pan Card"> Pan card
+<input type=checkbox name=i1 value="Driving License"> Driving License
+<input type=checkbox name=i1 value="Voter ID"> Voter ID
+</td>
+</tr>
+<tr>
+<td> Type Your Address: </td>
+<td>
+<textarea rows=5 cols=50 name=a1></textarea>
+</td>
+</tr>
+<tr>
+<td> Select Your Community: </td>
+<td>
+<select name=s1>
+<option > None </option>
+<option value="SC"> SC </option>
+<option value="ST"> ST </option>
+<option value="MBC"> MBC </option>
+<option value="BC"> BC </option>
+<option value="OC"> OC </option>
+</select>
+</td>
+</tr>
+<tr>
+<td> Upload Your Resume:</td>
+<td>
+<input type=file name=f1 >
+</td>
+</tr>
+<tr>
+<center>
+<td  align=center>
+<input type=Button value="Click Me"  name=b1 onclick="student()">
+<input type=Reset name=r1>
+<input type=Submit name=ss1>
+</td>
+</center>
+</tr>
+</table>
+</form>
+</body>
+</html>
+<script language="javascript">
+function student()
+{
+var x
+x=f1.n1.value
+y=f1.p1.value
+z=f1.g1.value
+q=f1.s1.value
+a=f1.a1.value
+
+alert("Button Clicked")
+alert("Name="+x)
+alert("Password="+y)
+alert("Gender="+z)
+alert("Address="+a)
+alert("Community="+q)
+}
+</script>
+
+
+
